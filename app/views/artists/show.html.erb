@@ -1,0 +1,6 @@
+<%= @artist.name %>
+<% @artist.albums.each do |album| %>
+  <%= album.name %>
+  <%= image_tag album.image_url %>
+  <%= album.released_at %>
+<% end %>
